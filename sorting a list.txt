@@ -1,0 +1,50 @@
+def asc_s(lis):
+    for i in range(0, m):
+        for j in range(i+1,m):
+            if (lis[i] > lis[j]):
+                t = lis[i]
+                lis[i] = lis[j]
+                lis[j] = t
+    print("the sorted list is",lis)
+    print("minimum number in the list is", lis[0])
+    print("maximum number in the list is", lis[n-1])
+def dsc_s(lis):
+    for i in range(0, m):
+        for j in range(i+1,m):
+            if (lis[i] < lis[j]):
+                t = lis[i]
+                lis[i] = lis[j]
+                lis[j] = t
+    print("the sorted list is",lis)
+    print("minimum number in the list is",lis[n-1])
+    print("maximum number in the list is", lis[0])
+n = int(input("enter the number of elements"))
+lis = [ ]
+for i in range(1,n+1):
+    inp = int(input())
+    lis.append(inp)
+print("the list is",lis)
+m = len(lis)
+print("enter ur choice of sorting")
+a = int(input("enter 1 for ascending 2 for descending"))
+if a == 1:
+    asc_s(lis)
+elif a ==2:
+    dsc_s(lis)
+else:
+    print("please enter correct choice")
+
+
+enter the number of elements5
+11
+897
+65
+41
+1
+the list is [11, 897, 65, 41, 1]
+enter ur choice of sorting
+enter 1 for ascending 2 for descending1
+the sorted list is [1, 11, 41, 65, 897]
+minimum number in the list is 1
+maximum number in the list is 897
+

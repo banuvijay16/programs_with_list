@@ -1,0 +1,26 @@
+def add(my_list1):
+    sum = 0
+    n = len(my_list1)
+    for i in range(0,n):
+        sum = sum + my_list1[i]
+    return sum
+print("enter the values to add and press z to stop adding")
+my_list1 = [ ]
+while True:
+    inp = input()
+    if (inp == 'z'):
+        break
+    my_list1.append(int(inp))
+print(my_list1)
+print(add(my_list1))
+
+
+output
+
+enter the values to add and press z to stop adding
+3
+2
+1
+z
+[3, 2, 1]
+6
